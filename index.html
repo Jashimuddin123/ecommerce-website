@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X -UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce website">
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Ecommerce Project</title>
+</head>
+<body>
+    <!-- navbar start here -->
+   <i class="fas fa-bars fa-2x" id="menu-icon"> </i>
+    <nav id="menu" class="hidden">
+        <!-- ul.vav_upper>li.nav_list>a.nav_link -->
+        <!-- nav upper ul -->
+        <ul class="nav-upper flex-space-around ">
+            <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-list"><a href="register.html" class="nav-link">Register</a></li>
+            <li class="nav-list"><a href="./login.html" class="nav-link">Login</a></li>
+            <li class="nav-list"><a href="index.html" class="nav-link">Logout</a></li>
+            <li class="nav-list"><a href="./contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-list"><a href="./profile.html" class="nav-link">
+                <img class="profile-icon" src="./images/author2.jpg" alt=""></a></li>
+        </ul>
+
+        <!-- lower nav -->
+        <!-- ul.nav_lower>li.nav_list>a.nav_link -->
+        <ul class="nav-lower  flex-space-around">
+            <li class="nav-list"><a href="./index.html" class="nav-brand nav-link">Jashim Expres</a></li>
+            <li class="nav-list"><a href="./cart.html" class=" nav-link">
+                <span><i class="fa-solid fa-cart-shopping"></i>Cart 2 Products - $124.40</span>
+            </a></li>
+        </ul>
+    </nav>
+    <!-- navbar end here -->
+
+    <!-- header section start -->
+    <header class="header">
+        <div class="banner flex-space-around">
+            <marquee class="banner-title" behavior="" direction="">50% Sale going on</marquee>
+
+            <div class="features flex-space-around">
+          <article class="feture flex-center">
+     <i class="fa-solid fa-truck feature-icon"></i>
+     <h3>Shipping Within 7 Days</h3>
+          </article>
+          <article class="feture flex-center ">
+     <i class="fa-brands fa-rocketchat feature-icon"></i>
+     <h3>Support 24/7</h3>
+          </article>
+          <article class="feture flex-center">
+     <i class="fa-regular fa-credit-card feature-icon"></i>
+     <h3>Safe Payment</h3>
+          </article>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+
+   <main class="flex-center">
+
+    <div class="sidebar">
+
+        <!-- categoris section -->
+        <section class="categories-section">
+            <h3 class="section-title">Categories</h3>
+            <ul class="list">
+             
+                <li class="list-item"> 
+                    <label for="phone">
+                        <input type="checkbox" id="phone" name="phone">
+                        Phone
+                    </label>
+                </li>
+             
+                <li class="list-item"> 
+                    <label for="tablets">
+                        <input type="checkbox" id="tablets" name="tablets">
+                     Tablets
+                    </label>
+                </li>
+             
+                <li class="list-item"> 
+                    <label for="telivision">
+                        <input type="checkbox" id="telivision" name="telivision">
+                       Telivision
+                    </label>
+                </li>
+                <li class="list-item"> 
+                    <label for="computers">
+                        <input type="checkbox" id="computers" name="computers">
+                     Computer
+                    </label>
+                </li>
+                <li class="list-item"> 
+                    <label for="headphons">
+                        <input type="checkbox" id="headphons" name="headphons">
+                     HeadPhons
+                    </label>
+                </li>
+
+            </ul>
+        </section>
+        <!-- price section -->
+        <section class="price-section">
+            <h3 class="section-title">Price Range</h3>
+            <ul class="list">
+             
+                <li class="list-item"> 
+                    <label for="price1">
+                        <input type="radio" id="price1" name="price">
+                      $0-$20
+                    </label>
+                </li>
+             
+                <li class="list-item"> 
+                    <label for="price2">
+                        <input type="radio" id="price2" name="price">
+                     $21-$50
+                    </label>
+                </li>
+             
+                <li class="list-item"> 
+                    <label for="price3">
+                        <input type="radio" id="price3" name="price">
+                   $51-$100
+                    </label>
+                </li>
+                <li class="list-item"> 
+                    <label for="price4">
+                        <input type="radio" id="price4" name="price">
+                  $101-$300
+                    </label>
+                </li>
+                <li class="list-item"> 
+                    <label for="price5">
+                        <input type="radio" id="price5" name="price">
+                    $300+
+                    </label>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- shiping section -->
+        <section class="shiping-section">
+            <h3 class="section-title">Shiping Options</h3>
+            <ul class="list">
+             
+                <li class="list-item"> 
+                    <label for="shiping">
+                        <input type="radio" id="shiping" name="shiping">
+                        Free Shiping
+                    </label>
+                </li>
+             
+                <li class="list-item"> 
+                    <label for="paid">
+                        <input type="radio" id="paid" name="paid">
+                     Paid Shiping
+                    </label>
+                </li>
+             
+                
+           
+
+            </ul>
+        </section>
+
+    </div>
+
+    <div class="main-containt">
+      <section class="actions flex-space-around">
+        <div class="sort-container">
+            <label for="sort">Sort By</label>
+            <select name="sort" id="sort">
+             <option value="sold">Most sold first</option>
+             <option value="sold"> rated first</option>
+             <option value="sold"> cheapest first</option>
+             <option value="sold"> Discount first</option>
+             <option value="sold"> arrival first</option>
+
+            </select>
+
+        </div>
+
+        <div class="search-container">
+            <input  type="text" placeholder="Search Product">
+            <button class="btn button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+      </section>
+      <!-- products section start here  -->
+      <section class="products-section">
+
+        <article class="single-product card">
+            <div class="badge">
+                <span>5 in stik</span>
+                <hr class="hr-design">
+                <span>3 sold</span>
+            </div>
+            <img class="product-img" src="./images/card1.jpg" alt="">
+            <div class="product-body">
+            <h3>Sony V-4 Headphone</h3>
+            <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+            </p>
+            <p class="product-description">
+                Intelligent and intuitive, the WH-1000XM4 headphones offer further improvements to our advanced noise cancellation, exceptional sound quality, and smart . headphone used all over the people in the world.
+                <a href="./product.html" class="learn-more">Learn More</a>
+            </p>
+            <h4 class="product-price">$225.99</h4>
+            <p class="product-rating">Rating: 4.5/5</p>
+            <button class="btn product-button">Add To Card</button>
+            </div>
+        </article>
+        <article class="single-product card">
+            <div class="badge">
+                <span>17 in stock</span>
+                <hr class="hr-design">
+                <span>9 sold</span>
+            </div>
+            <img class="product-img" src="./images/card2.jpg" alt="">
+            <div class="product-body">
+            <h3>Apple smart watch</h3>
+            <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+            </p>
+            <p class="product-description">
+                It's the ultimate device for a healthy life. Apple Watch can do what your other devices can't because it's on your wrist. When you wear it, you get a fitness partner that measures all the ways you move
+                <a href="./product.html" class="learn-more">Learn More</a>
+            </p>
+            <h4 class="product-price">$475.85</h4>
+            <p class="product-rating">Rating: 4.5/7</p>
+            <button class="btn product-button">Add To Card</button>
+            </div>
+        </article>
+        <article class="single-product card">
+            <div class="badge">
+                <span>9 in stock</span>
+                <hr class="hr-design">
+                <span>13 sold</span>
+            </div>
+            <img class="product-img" src="./images/card3.jpg" alt="">
+            <div class="product-body">
+            <h3>Apple smart glass</h3>
+            <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+            </p>
+            <p class="product-description">
+                A future wearable from Apple may be a set of augmented reality glasses called "Apple Glass." One day soon, users will interact with information and digital objects via transparent glass worn over their eyes.
+                <a href="./product.html" class="learn-more">Learn More</a>
+            </p>
+            <h4 class="product-price">$125.91</h4>
+            <p class="product-rating">Rating: 5.5/9</p>
+            <button class="btn product-button">Add To Card</button>
+            </div>
+        </article>
+        <article class="single-product card">
+            <div class="badge">
+                <span>5 in stik</span>
+                <hr class="hr-design">
+                <span>3 sold</span>
+            </div>
+            <img class="product-img" src="./images/card4.jpg" alt="">
+            <div class="product-body">
+            <h3>Nick Shoes</h3>
+            <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+            </p>
+            <p class="product-description">
+           
+Nike Air technology consists of pressurised air inside a tough yet flexible bag, and provides more flexibility and spring without compromising structure. The Air-Sole units maintain their given form with elasticity, 
+                <a href="./product.html" class="learn-more">Learn More</a>
+            </p>
+            <h4 class="product-price">$225.99</h4>
+            <p class="product-rating">Rating: 4.5/5</p>
+            <button class="btn product-button">Add To Card</button>
+            </div>
+        </article>
+        <article class="single-product card">
+            <div class="badge">
+                <span>5 in stik</span>
+                <hr class="hr-design">
+                <span>3 sold</span>
+            </div>
+            <img class="product-img" src="./images/card5.jpg" alt="">
+            <div class="product-body">
+            <h3>IPHONE-15</h3>
+            <p class="">
+                <span class="dot red"></span>
+                <span class="dot black"></span>
+                <span class="dot green"></span>
+            </p>
+            <p class="product-description">
+                iPhone 15 Pro is the first iPhone to support USB 3, for a huge leap in data transfer speeds and faster pro workflows than ever before. The new USB‑C connector.iphone is worldclass brand.lots of people used iphone ..
+                <a href="./product.html" class="learn-more">Learn More</a>
+            </p>
+            <h4 class="product-price">$1225.99</h4>
+            <p class="product-rating">Rating: 4.5/5</p>
+            <button class="btn product-button">Add To Card</button>
+            </div>
+        </article>
+        <article class="single-product card">
+            <div class="badge">
+                <span>5 in stik</span>
+                <hr class="hr-design">
+                <span>3 sold</span>
+            </div>
+            <img class="product-img" src="./images/card6.jpg" alt="">
+            <div class="product-body">
+            <h3>HD-IPAD</h3>
+            <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+            </p>
+            <p class="product-description">
+                An iPad is a tablet PC designed by Apple Inc. The iPad features a 9.7-inch touch screen that users can interact with directly through finger strokes. This portable device can be used for sale,ipad is remarkble tools of technology..
+                <a href="./product.html" class="learn-more">Learn More</a>
+            </p>
+            <h4 class="product-price">$925.99</h4>
+            <p class="product-rating">Rating: 4.5/5</p>
+            <button class="btn product-button">Add To Card</button>
+            </div>
+        </article>
+     
+
+      </section>
+
+      <!-- pagination  -->
+      <div class="pagination-container">
+        <button class="btn pagination-btn">
+            <i class="fas fa-less-than"></i>
+        </button>
+        <button class="btn pagination-btn">2</button>
+        <button class="btn pagination-btn">3</button>
+        <button class="btn pagination-btn">4</button>
+        <button class="btn pagination-btn">5</button>
+        <button class="btn pagination-btn">6</button>
+        <button class="btn pagination-btn">7</button>
+        <button class="btn pagination-btn">8</button>
+        <button class="btn pagination-btn">9</button>
+        <button class="btn pagination-btn">10</button>
+        <button class="btn pagination-btn">11</button>
+        <button class="btn pagination-btn">...</button>
+        <button class="btn pagination-btn">50</button>
+        <button class="btn pagination-btn">
+            <i class="fas fa-greater-than"></i>
+        </button>
+      </div>
+
+      <!-- products section end here  -->
+    </div>
+    
+    <!--  -->
+   </main>
+
+
+   <!-- footer section -->
+   <footer class="footer flex-space-around">
+    <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter:
+        </label>
+        <input class="fotter-input" type="email" placeholder="write your email" id="subscrive" name="subscribe">
+        <button class="btn btn-subscribe">Subscribe</button>
+    </div>
+    <div>
+        <p>&copy; Copyright 2024 Jashim Express.All Rigt reserved</p>
+    </div>
+   </footer>
+   <script src="./scripts/index.js"></script>
+</body>
+</html>
